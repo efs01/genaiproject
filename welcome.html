@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology Blog</title>
+    <style>
+        /* Reset default margin and padding */
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background-color: #007bff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+            display: inline-block; /* Ensure links are clickable */
+        }
+
+        nav a:hover {
+            color: #000;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+
+        .post {
+            background-color: #333;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            cursor: pointer; /* Change cursor to pointer when hovering over posts */
+        }
+
+        .post:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .post h2 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .post img {
+            float: left;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 768px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            nav a {
+                margin: 5px;
+            }
+
+            .container {
+                width: 90%;
+            }
+
+            .post {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Next Generation Tech Blog</h1>
+        <p>Stay updated with the latest tech news and trends</p>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Articles</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="post" onclick="window.location.href='post1.html'">
+            <img src="post1.png" alt="Image 1" width="100" height="100">
+            <h2>Welcome to our Technology & AI Blog!</h2>
+            <p>We are excited to embark on this journey of exploring the latest trends, advancements, and insights in the ever-evolving fields of technology and artificial intelligence (AI). Our mission is to provide our readers with valuable, informative, and engaging content that delves into various aspects of technology and AI. </p>
+            <p>Click to continue reading...</p>
+        </div>
+        <div class="post" onclick="window.location.href='post2.html'">
+            <img src="post2.png" alt="Image 2" width="100" height="100">
+            <h2>AI-Powered Innovative Solutions to Improve Your Daily Life</h2>
+            <p>Here you can find some innovative ideas to use AI in your daily life.</p>
+            <p>Click to continue reading...</p>
+        </div>
+        <div class="post" onclick="window.location.href='post3.html'">
+            <img src="post3.png" alt="Image 3" width="100" height="100">
+            <h2>Unlocking Fun: Exploring AI Tools with Friends and Family</h2>
+            <p>In today's digital age, technology has not only revolutionized the way we work and communicate but also the way we have fun. With the advent of artificial intelligence (AI), a whole new realm of entertainment possibilities has emerged. From interactive games to creative projects, AI tools offer endless opportunities to bond with friends and family in exciting and innovative ways.
+                Here are some creative ways to harness the power of AI for fun with your loved ones:</p>
+            <p>Click to continue reading...</p>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Next Generation Tech Blog
+    </footer>
+</body>
+</html>
